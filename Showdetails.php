@@ -12,6 +12,9 @@ if(isset($_REQUEST["status"])){
     if($_REQUEST["status"]==1){
         echo("Data Deleted");
     }
+    else if($_REQUEST["status"]==2){
+        echo("Data DataUpdated");
+    }
 }
 
 
