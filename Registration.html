@@ -6,11 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
+    <style>
+        #showdetail{
+            background-color: rgb(248, 241, 241);
+            color: black;
+            border: 1px solid black;
+            text-decoration: none;
+            margin: 4px;
+            /* padding: 3px; */
+            height: 20%;
+            margin-top: 2px;
+        }
+    </style>
 </head>
 
 <body>
 
-    <table border="1">
+    <table border="1" cellspacing="0" cellpadding="0">
         <form action="SaveData.php">
 
             <tr>
@@ -30,9 +42,9 @@
                 <th>Enter Your Mobile Number</th>
                 <td><input type="text" name="txtmobile"></td>
             </tr>
-            <tr>
+            <tr style="margin-top: 5px;">
                 <th align="right"><input type="submit" value="Done">
-                    <a href="Showdetails.php">Show All Details</a>
+                    <a href="verify.php" id="showdetail">Show All Details</a>
                 </th>
                 <th align="left"><input type="reset"></th>
 
