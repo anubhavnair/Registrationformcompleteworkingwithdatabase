@@ -1,4 +1,45 @@
-   
+ 
+ 
+ <html>
+    <head>
+        <style>
+            table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+#deleteoption, #updateoption {
+  padding: 5px 10px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+}
+
+#deleteoption:hover, #updateoption:hover {
+  background-color: #555;
+}
+
+        </style>
+    </head>
+
+ <body>
+    
+
+
     <?php
 
 $con=mysqli_connect("127.0.0.1","root","");
@@ -75,4 +116,5 @@ while($data=mysqli_fetch_array($row)){
 echo("</table>");
 
 ?>
-</html>
+ </body>
+ </html>

@@ -7,16 +7,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
     <style>
-        #showdetail{
-            background-color: rgb(248, 241, 241);
-            color: black;
-            border: 1px solid black;
-            text-decoration: none;
-            margin: 4px;
-            /* padding: 3px; */
-            height: 20%;
-            margin-top: 2px;
-        }
+       /* Animating the title */
+h1 {
+  animation: slideIn 1s forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Styling the table */
+table {
+  margin: 50px auto;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling the table header */
+th {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+}
+
+/* Styling the table cells */
+td {
+  padding: 10px;
+}
+
+/* Styling the input fields */
+input[type="text"] {
+  padding: 5px;
+  width: 100%;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease-out;
+}
+
+input[type="text"]:focus {
+  border-color: #333;
+}
+
+/* Styling the buttons */
+input[type="submit"], input[type="reset"] {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-out;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+  background-color: #555;
+}
+
+/* Animating the link */
+a#showdetail {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #333;
+  border-radius: 5px;
+  text-decoration: none;
+  animation: bounce 1s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
     </style>
 </head>
 
